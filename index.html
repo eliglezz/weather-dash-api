@@ -13,66 +13,68 @@
         <h1>Weather.Dash</h1>
         <h4 class="time"></h4>
     </header>
-    <main class="container-flex">
-        <div class="grid row">
-            <div class="col-2 col-md-4 col-sm">
+    <article>
+        <div class="grid">
+            <article>
                 <form>
                     <h3>Search for a City:</h3>
                     <label for="city">City</label>
-                    <input type="text" class="locationInput" name="city" placeholder="City" required> 
+                    <input id="silver" type="text" class="locationInput" name="city" placeholder="City" required> 
                     <button class="btn" type="submit">Search</button>
+                    <div class="history"></div>
                 </form>
-                <div class="history"></div>
-            </div>
-            <div class="col-md-8 col-10 col-sm-8">
-                <article>
-                    <h4 class="cityName"></h4>
-                    <img class="cityIcon"></img>
-                    <p class="cityTemp"></p>
-                    <p class="cityHumidity"></p>
-                    <p class="cityWind"></p>
-                    <p class="uvIndex"></p>
-                </article>
-                <article class="fiveDayFoecast" hidden="true">
-                    <h4 class="five-day">5 Day Forecast.</h4>
-                    <article class="day1">
-                        <h4 class="cityName1"></h4>
-                        <img class="cityIcon1"></img>
-                        <p class="cityTemp1"></p>
-                        <p class="cityHumidity1"></p>
-                        <p class="cityWind1"></p>
-                    </article>
-                    <article class="day2">
-                        <h4 class="cityName2"></h4>
-                        <img class="cityIcon2"></img>
-                        <p class="cityTemp2"></p>
-                        <p class="cityHumidity2"></p>
-                        <p class="cityWind2"></p>
-                    </article>
-                    <article class="day3">
-                        <h4 class="cityName3"></h4>
-                        <img class="cityIcon3"></img>
-                        <p class="cityTemp3"></p>
-                        <p class="cityHumidity3"></p>
-                        <p class="cityWind3"></p>
-                    </article>
-                    <article class="day4">
-                        <h4 class="cityName4"></h4>
-                        <img class="cityIcon4"></img>
-                        <p class="cityTemp4"></p>
-                        <p class="cityHumidity4"></p>
-                        <p class="cityWind4"></p>
-                    </article>
-                    <article class="day5">
-                        <h4 class="cityName5"></h4>
-                        <img class="cityIcon5"></img>
-                        <p class="cityTemp5"></p>
-                        <p class="cityHumidity5"></p>
-                        <p class="cityWind5"></p>
-                    </article>
-                </article>
-            </div>
+            </article>
+            <article>
+                <h4 class="cityName"></h4>
+                <img class="cityIcon"></img>
+                <p class="cityTemp"></p>
+                <p class="cityHumidity"></p>
+                <p class="cityWind"></p>
+                <p class="uvIndex"></p>
+            </article>
         </div>
+    </article>
+    <main class="container-flex">
+        <article class="fiveDayFoecast">
+            <h4 class="five-day">5 Day Forecast.</h4>
+            <div class="grid">
+                <article class="day1">
+                    <h4 class="cityName1"></h4>
+                    <img class="cityIcon1"></img>
+                    <p class="cityTemp1"></p>
+                    <p class="cityHumidity1"></p>
+                    <p class="cityWind1"></p>
+                </article>
+                <article class="day2">
+                    <h4 class="cityName2"></h4>
+                    <img class="cityIcon2"></img>
+                    <p class="cityTemp2"></p>
+                    <p class="cityHumidity2"></p>
+                    <p class="cityWind2"></p>
+                </article>
+                <article class="day3">
+                    <h4 class="cityName3"></h4>
+                    <img class="cityIcon3"></img>
+                    <p class="cityTemp3"></p>
+                    <p class="cityHumidity3"></p>
+                    <p class="cityWind3"></p>
+                </article>
+                <article class="day4">
+                    <h4 class="cityName4"></h4>
+                    <img class="cityIcon4"></img>
+                    <p class="cityTemp4"></p>
+                    <p class="cityHumidity4"></p>
+                    <p class="cityWind4"></p>
+                </article>
+                <article class="day5">
+                    <h4 class="cityName5"></h4>
+                    <img class="cityIcon5"></img>
+                    <p class="cityTemp5"></p>
+                    <p class="cityHumidity5"></p>
+                    <p class="cityWind5"></p>
+                </article>
+            </div>
+        </article>
 
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
